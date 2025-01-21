@@ -1,0 +1,68 @@
+/*Style and layout for the entire page*/
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; 
+    background-color:wheat;
+    color: darkslategrey;
+}
+
+/*Header layout and design*/
+header {
+    padding: 20px;
+    background-color:blanchedalmond;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/*Container for header elements*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Styles for the navigation bar*/
+nav ul {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color:darkslategrey
+}
+
+nav ul li {
+    margin: 0 4em;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: white;
+}
+
+/*Styling for the main content area*/
+main {
+    padding: 20px;
+    margin: 20px;
+}
+
+/*Styling for the footer section*/
+footer {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+/*Media querie for screen smaller than 1025 px*/
+@media (max-width: 1024px) {
+
+}
+
+/*Media querie for screen smaller than 601 px*/
+@media (max-width: 600px) {
+
+}

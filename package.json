@@ -1,0 +1,16 @@
+{
+  "name": "moment1_dt211g",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Evelina Olsson",
+  "license": "ISC",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "description": "Automatisering och publicering för moment 1",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
