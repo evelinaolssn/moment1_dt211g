@@ -77,12 +77,82 @@ footer {
     background-color: blanchedalmond;
 }
 
-/*Media querie for screen smaller than 1025 px*/
+
+
+/*Hides hamburger icon on bigger screens*/
+.hamburger-menu {
+    display: none;
+}
+
+
+
+/*Media querie for screens smaller than 1025 px (tablets)*/
 @media (max-width: 1024px) {
-
+    /*Change image layout*/
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/*Media querie for screen smaller than 601 px*/
+
+/*Media querie for screens smaller than 601 px (mobile phones)*/
 @media (max-width: 600px) {
+    /*Change image layout*/
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    /*Hamburger menu style*/
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background-color: darkslategray;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+    
+    /*Mobile navigation menu style*/
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        background-color: darkslategray;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+    }
+    
+    /*Makes navigation menu visible when klicked*/
+    .navigation.visible {
+        display: block; 
+    }
+    
+    /* Mobile navigation menu layout*/
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
+    /*Creates space between navigation links*/
+    .navigation ul li {
+        padding: 15px 0;
+    }
+    
+    /*Navigation links style*/
+    .navigation ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
 }
+
